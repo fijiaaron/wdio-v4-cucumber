@@ -2,7 +2,7 @@ const assert = require('assert');
 const { Given, Then, When } = require('cucumber');
 import HiltonMobileAppPage from '../screen-objects/hiltonMobileAppPage';
 import MemphisPropertyPage from '../screen-objects/memphisPropertyPage';
-import CleaningValuesTab from '../screen-objects/cleaningValuesTab';
+import NewYorkPropertyPage from '../screen-objects/NewYorkPropertyPage';
 
 //Write all steps in third-person point of view
 Given(/^the user opens the Hilton mobile app$/, function () {
@@ -20,6 +20,11 @@ When(/^the user opens the Cleaning Values setting of the New York property$/, fu
 	HiltonMobileAppPage.openSettings();
 	NewYorkPropertyPage.goToCleaningValues();
 });
-Then(/^the page will display the correct room types$/, function () {
-	assert(CleaningValuesTab.containsAllRoomTypes());
+Then(/^the New York Property will display the correct room types$/, table => {
+	const expectedRoomTypes = table.raw();
+	assert(NewYorkPropertyPage.containsExpectedRooms(expectedRoomTypes));
+});
+Then(/^the Memphis property will display the following room types$/, table => {
+	const expectedRoomTypes = table.raw();
+	assert(MemphisPropertyPage.containsExpectedRooms(expectedRoomTypes));
 });
