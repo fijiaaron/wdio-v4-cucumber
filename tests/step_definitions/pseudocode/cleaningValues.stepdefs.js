@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { Given, Then, When } = require('cucumber');
-import HiltonMobileAppPage from '../screen-objects/hiltonMobileAppPage';
+import HiltonMobileAppPage from '../../screen-objects/pseudocode/hiltonMobileAppPage';
 import MemphisPropertyPage from '../screen-objects/memphisPropertyPage';
 import NewYorkPropertyPage from '../screen-objects/NewYorkPropertyPage';
 

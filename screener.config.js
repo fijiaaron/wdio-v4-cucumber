@@ -1,7 +1,7 @@
 var Steps = require('screener-runner/src/steps');
 module.exports = {
     // full repository name for your project:
-    projectRepo: 'hilton-poc',
+    projectRepo: 'test',
   
     // this example assumes Environment Variables listed below exist on your system:
     apiKey: process.env.SCREENER_API_KEY,
@@ -49,61 +49,6 @@ module.exports = {
     //   }
     // ],
     resolutions: [
-        '1024x768',
-        {
-            deviceName: 'iPhone X'
-        },
-        {
-          deviceName: 'iPhone X',
-          deviceOrientation: 'landscape'
-        },
-        {
-            deviceName: 'iPhone 8 Plus'
-        },
-        {
-          deviceName: 'iPhone 8 Plus',
-          deviceOrientation: 'landscape'
-        },
-        {
-            deviceName: 'iPhone 8'
-        },
-        {
-          deviceName: 'iPhone 8',
-          deviceOrientation: 'landscape'
-      },
-        {
-            deviceName: 'iPhone 7 Plus'
-        },
-        {
-          deviceName: 'iPhone 7 Plus',
-          deviceOrientation: 'landscape'
-      },
-        {
-            deviceName: 'iPhone 7',
-            deviceOrientation: 'landscape'
-        },
-        {
-          deviceName: 'iPhone 7'
-      },
-        {
-          deviceName: 'iPad Pro'
-        },
-        {
-          deviceName: 'iPad Pro',
-          deviceOrientation: 'landscape'
-        },
-        {
-          deviceName: 'iPad'
-        },
-        {
-          deviceName: 'iPad',
-          deviceOrientation: 'landscape'
-        },
-        {
-          deviceName: 'Galaxy S8'
-        },
-        {
-          deviceName: 'Nexus 10'
-        }
+      '414x736'
       ]
   };

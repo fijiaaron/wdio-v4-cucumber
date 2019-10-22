@@ -7,13 +7,13 @@ class PhpTravelsHomePage extends BasePage {
 	}
 
 	open() {
-		browser.url('https://www.phptravels.net')
-		//super.open('https://www.phptravels.net');
+		//browser.url('https://phptravels.com/demo/')
+		browser.url('https://www.saucedemo.com/')
 	}
 
 	isLoaded() {
-		const myAccountLocator = $('#li_myaccount');
-		return myAccountLocator.waitForVisible(10000);
+		const myAccountLocator = $('#login_button_container');
+		return myAccountLocator.waitForVisible(6000);
 	}
 	
 	get hotelOrCitySearchBox() {

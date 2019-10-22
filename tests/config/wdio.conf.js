@@ -16,21 +16,70 @@ exports.config = {
 	// ==================
 	//
 	specs: [
-		'./tests/features/**/*.feature'
+		// './tests/features/**/*.feature'
+		'./tests/features/*.feature'
 	],
 	//
 	// ============
 	// Capabilities
 	// ============
 	//
-	maxInstances: 10,
+	maxInstances: 100,
 	capabilities: [ {
 		browserName: 'chrome',
 		platform: 'macOS 10.12',
 		version: '70.0',
 		screenResolution: '1600x1200',
-		tunnelIdentifier: 'NikolaysTunnel'
-	} ],
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0',
+		screenResolution: '1600x1200',
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0',
+		screenResolution: '1600x1200',
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0',
+		screenResolution: '1600x1200',
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0',
+		screenResolution: '1600x1200',
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0'
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0'
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0'
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0'
+	},
+	{
+		browserName: 'chrome',
+		platform: 'macOS 10.12',
+		version: '70.0'
+	}     ],
 	//
 	// ===================
 	// Test Configurations
@@ -58,7 +107,8 @@ exports.config = {
 		 * from where the config file is ran based on the pacakge.json, so from the root of the projects
 		 */
 		require: [
-			'./tests/step_definitions/**/*.js',
+			//'./tests/step_definitions/**/*.js',
+			'./tests/step_definitions/*.js',
 			'./tests/config/*.hook.js',
 		],   // <string[]> (file/dir) require files before executing features
 		backtrace: true,    // <boolean> show full backtrace for errors
@@ -128,7 +178,7 @@ exports.config = {
 		htmlReporter: {
 			jsonFolder: './tmp',
 			reportFolder: `./tmp/report`,
-			openReportInBrowser: true,
+			openReportInBrowser: false,
 			removeFolders: true,
 			// ... other options, see Options
 			// https://github.com/wswebcreation/wdio-multiple-cucumber-html-reporter

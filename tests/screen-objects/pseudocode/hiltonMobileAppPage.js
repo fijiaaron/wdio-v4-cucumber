@@ -1,6 +1,6 @@
-import BasePage from './basePage'
+import BaseHiltonPropertyPage from './baseHiltonPropertyPage'
 
-class HiltonMobileAppPage extends BasePage {
+class HiltonMobileAppPage extends BaseHiltonPropertyPage {
 
 	constructor() {
 		super();
@@ -18,7 +18,7 @@ class HiltonMobileAppPage extends BasePage {
 		 * actions)
 		 */
 		const header = $('#global_header');
-		return header.waitForVisible(25000);
+		return header.waitForVisible(5000);
 	}
 
 	openSettings() {

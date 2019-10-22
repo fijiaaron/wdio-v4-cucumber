@@ -1,5 +1,5 @@
 Feature: Is the Offers page working
-  @demo
+  @demo @ignore
   Scenario: Offers page loads successfully
     Given I use a web browser to navigate to the Hilton home page
     When I navigate to Offers
