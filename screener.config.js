@@ -37,8 +37,8 @@ module.exports = {
         browserName: 'firefox'
       },
       {
-        browserName: 'internet explorer',
-        version: '11'
+        url: 'https://www.hilton.com/en/hotels/laxswhw-homewood-suites-los-angeles-international-airport/',
+        name: 'Hilton Homewood Suites LA'
       }
     ],
     resolutions: [
@@ -47,22 +47,50 @@ module.exports = {
             deviceName: 'iPhone X'
         },
         {
+          deviceName: 'iPhone X',
+          deviceOrientation: 'landscape'
+        },
+        {
             deviceName: 'iPhone 8 Plus'
+        },
+        {
+          deviceName: 'iPhone 8 Plus',
+          deviceOrientation: 'landscape'
         },
         {
             deviceName: 'iPhone 8'
         },
         {
+          deviceName: 'iPhone 8',
+          deviceOrientation: 'landscape'
+      },
+        {
             deviceName: 'iPhone 7 Plus'
         },
         {
-            deviceName: 'iPhone 7'
+          deviceName: 'iPhone 7 Plus',
+          deviceOrientation: 'landscape'
+      },
+        {
+            deviceName: 'iPhone 7',
+            deviceOrientation: 'landscape'
         },
+        {
+          deviceName: 'iPhone 7'
+      },
         {
           deviceName: 'iPad Pro'
         },
         {
+          deviceName: 'iPad Pro',
+          deviceOrientation: 'landscape'
+        },
+        {
           deviceName: 'iPad'
+        },
+        {
+          deviceName: 'iPad',
+          deviceOrientation: 'landscape'
         },
         {
           deviceName: 'Galaxy S8'
