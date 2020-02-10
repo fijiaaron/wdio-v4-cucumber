@@ -1,4 +1,4 @@
-class loginScreenObject {
+class LoginScreen {
     get username() {
         return $('username-selector');
     }
@@ -32,4 +32,4 @@ class loginScreenObject {
         this.loginButton.click();
     }
 }
-export default new loginScreenObject();
+export default new LoginScreen();
