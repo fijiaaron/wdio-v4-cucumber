@@ -1,4 +1,4 @@
-class bookingScreenObject{
+class BookingScreen{
     /**
      * For React Native applications, the key is that they are created using the same exact
      * code base. This means that they have the same team working on the app with the
@@ -69,4 +69,4 @@ class bookingScreenObject{
     }
 }
 
-export default new bookingScreenObject();
+export default new BookingScreen();
