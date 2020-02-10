@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio tests/config/wdio.conf.js",
-    "test.screener.sauce": "screener-runner --conf screener.sauce.config.js"
+    "test.screener.sauce": "screener-runner --conf screener.sauce.config.js",
+    "test.sauce.parallelization": "wdio tests/config/wdio.sauce.parallelization.conf.js"
   },
   "repository": {
     "type": "git",
